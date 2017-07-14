@@ -1,4 +1,4 @@
-package Lab::Measurement::DocWriter::LabVISAdoc;
+package Lab::Measurement::DocWriter;
 #ABSTRACT: Generic documentation formatting class for Lab::Measurement
 
 use strict;

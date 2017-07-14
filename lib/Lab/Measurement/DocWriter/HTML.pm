@@ -2,7 +2,7 @@ package Lab::Measurement::DocWriter::HTML;
 #ABSTRACT: HTML documentation output for Lab::Measurement
 
 use strict;
-use parent 'Lab::Measurement::DocWriter::LabVISAdoc';
+use parent 'Lab::Measurement::DocWriter';
 use File::Basename;
 use Syntax::Highlight::Engine::Simple::Perl;
 

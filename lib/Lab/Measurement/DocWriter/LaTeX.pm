@@ -3,7 +3,7 @@ package Lab::Measurement::DocWriter::LaTeX;
 
 use strict;
 
-use parent 'Lab::Measurement::DocWriter::LabVISAdoc';
+use parent 'Lab::Measurement::DocWriter';
     
 use File::Basename;
 use Cwd;
