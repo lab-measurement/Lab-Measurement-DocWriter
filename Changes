@@ -1,5 +1,9 @@
 History for Lab-Measurement-DocWriter
 
+0.992 2017-07-14
+
+  * Also install the main script...
+
 0.991 2017-07-14
 
   * Fix directory structure for the CPAN indexer
