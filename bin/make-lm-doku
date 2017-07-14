@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+#PODNAME: make-lm-doku
+#ABSTRACT: Compile documentation for Lab::Measurement
 
 use strict;
 use Lab::Measurement::DocWriter::LaTeX;
@@ -32,10 +34,6 @@ for ( map "Documentation::$_", @jobs ) {
 }
 
 #copy('Homepage/index.html', 'Homepage/index.php');
-
-=head1 NAME
-
-makedoku.pl - Compile documentation for Lab::VISA
 
 =head1 SYNOPSIS
 
@@ -85,10 +83,6 @@ Directory to create the documentation in. Defaults to C<Homepage/docs>.
 Directory to create temporary trash in. Will be deleted after execution. Defaults to C<Homepage/temp>.
 
 =back
-
-=head1 AUTHOR/COPYRIGHT
-
-Copyright 2010 Daniel Schröer (schroeer@cpan.org), 2011 Andreas K. Hüttel (mail@akhuettel.de)
 
 =cut
 
