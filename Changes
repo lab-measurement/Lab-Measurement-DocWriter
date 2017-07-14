@@ -1,0 +1,7 @@
+History for Lab-Measurement-DocWriter
+
+0.990 2017-07-14
+
+  * Extract files from the Lab::Measurement git repository into a
+    separate directory
+  * Prepare as standalone Perl distribution
