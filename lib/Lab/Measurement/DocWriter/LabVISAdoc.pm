@@ -1,4 +1,5 @@
-package Documentation::LabVISAdoc;
+package Lab::Measurement::DocWriter::LabVISAdoc;
+#ABSTRACT: Generic documentation formatting class for Lab::Measurement
 
 use strict;
 use File::Basename;
@@ -76,7 +77,6 @@ sub walk_one_section {
     }
 }
 
-# Documentation::LabVISADoc is sort of an abstract class
 # the following abstract methods are to be overwritten
 
 sub start {

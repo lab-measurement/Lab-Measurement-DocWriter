@@ -1,7 +1,8 @@
-package Documentation::HTML;
+package Lab::Measurement::DocWriter::HTML;
+#ABSTRACT: HTML documentation output for Lab::Measurement
 
 use strict;
-use parent 'Documentation::LabVISAdoc';
+use parent 'Lab::Measurement::DocWriter::LabVISAdoc';
 use File::Basename;
 use Syntax::Highlight::Engine::Simple::Perl;
 
@@ -50,7 +51,7 @@ sub process_element {
     $bnt =~ s!-!::!g ;
 
     # pod page
-    my $parser = MyPodXHTML->new();
+    my $parser = Lab::Measurement::DocWriter::HTML::MyPodXHTML->new();
     my $title = "$sections[0]: $bnt";
     my $html;
     $parser->output_string(\$html);
@@ -127,7 +128,8 @@ FOOTER
 }
 
 
-package MyPodXHTML;
+package Lab::Measurement::DocWriter::HTML::MyPodXHTML;
+
 use strict;
 use parent 'Pod::Simple::XHTML';
 #use HTML::Entities;

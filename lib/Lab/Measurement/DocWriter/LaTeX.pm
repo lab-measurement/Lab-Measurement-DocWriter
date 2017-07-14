@@ -1,8 +1,9 @@
-package Documentation::LaTeX;
+package Lab::Measurement::DocWriter::LaTeX;
+#ABSTRACT: LaTeX documentation output for Lab::Measurement
 
 use strict;
 
-use parent 'Documentation::LabVISAdoc';
+use parent 'Lab::Measurement::DocWriter::LabVISAdoc';
     
 use File::Basename;
 use Cwd;
@@ -37,7 +38,7 @@ sub process_element {
         $basename =~ s!/!_!g ;
         $basename =~ s!VISA-VISA!VISA!g ;
 
-        my $parser = MyPod2LaTeX->new();
+        my $parser = Lab::Measurement::DocWriter::LaTeX::MyPod2LaTeX->new();
         $parser->AddPreamble(0);
         $parser->AddPostamble(0);
         $parser->ReplaceNAMEwithSection(1);
@@ -118,7 +119,8 @@ sub _get_postamble {
 POSTAMBLE
 }
 
-package MyPod2LaTeX;
+package Lab::Measurement::DocWriter::LaTeX::MyPod2LaTeX;
+
 use strict;
 use parent qw/ Pod::LaTeX /;
 
