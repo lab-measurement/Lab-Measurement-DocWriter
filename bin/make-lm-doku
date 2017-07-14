@@ -1,8 +1,8 @@
 #!/usr/bin/perl
 
 use strict;
-use Documentation::LaTeX;
-use Documentation::HTML;
+use Lab::Measurement::DocWriter::LaTeX;
+use Lab::Measurement::DocWriter::HTML;
 use Getopt::Long;
 use Pod::Usage;
 
