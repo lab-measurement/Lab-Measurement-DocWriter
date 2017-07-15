@@ -28,7 +28,7 @@ pod2usage(
   )
   if ( $options{help} || !@jobs );
 
-for ( map "Documentation::$_", @jobs ) {
+for ( map "Lab::Measurement::DocWriter::$_", @jobs ) {
     my $processor = new { $_ }( $options{docdir}, $options{tempdir}, $options{keeptemp} );
     $processor->process( $options{toc} );
 }
