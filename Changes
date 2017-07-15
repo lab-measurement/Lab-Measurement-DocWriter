@@ -1,5 +1,9 @@
 History for Lab-Measurement-DocWriter
 
+0.993 2017-07-15
+
+  * Fix installed module names in the main script
+
 0.992 2017-07-14
 
   * Also install the main script...
