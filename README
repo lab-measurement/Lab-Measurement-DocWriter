@@ -1,11 +1,4 @@
+This package is internally used on the Lab::Measurement web page for
+converting the POD documentation to HTML.
 
-Regenerating the documentation requires the following packages plus dependencies:
-
-1) Perl:
-
-YAML
-Syntax-Highlight-Engine-Simple-Perl
-
-2) Latex::
-
-listings
+http://www.labmeasurement.de/docs/
