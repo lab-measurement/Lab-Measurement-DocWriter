@@ -38,11 +38,11 @@ sub process_element {
     # my $basename = fileparse($podfile,qr{\.(pod|pm)});
 
     my $basename = $podfile; 
-    $basename =~ s!^.*/lib/Lab/!!g ;
+    $basename =~ s!^.*lib/!!g ;
     $basename =~ s!\.(pod|pm)!!g ;
     $basename =~ s!^.*Measurement/scripts/!!g ;
+    $basename =~ s!^examples/!!g ;
     $basename =~ s!/!-!g ;
-    $basename =~ s!VISA-VISA!VISA!g ;
 
     my $hascode = ($podfile =~ /\.(pl|pm)$/);
     print "pod $podfile base $basename\n";    
@@ -148,7 +148,6 @@ sub resolve_pod_page_link {
     return undef unless defined $to || defined $section;
     if ($to =~ /^Lab/) {
         my $tg=$to;
-        $tg =~ s!^Lab::!!g ;
 	$tg =~ s!::!-!g ;
         return "$tg.html";
     }
